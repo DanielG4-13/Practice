@@ -7,8 +7,43 @@
 </head>
 <script>
 
+fn = 'Daniel'
+ln = 'Garibay'
+age= '18'
+city= 'Chicago'
 
-    
+console.log('Hello! My name is '+ (fn) +' '+(ln) + "! I’m "+(age)+ " years old, and I’m from " +(city)+". It’s nice to meet you!");
+// info = 'Hello! My name is '+ (fn) +' '+(ln) + "! I’m "+(age)+ " years old, and I’m from " +(city)+". It’s nice to meet you!"
+
+initials= `${fn.charAt(0)}${ln.charAt(0)}`;
+
+console.log(`My initials are: ${initials}`);
+const nameLength = fn.length;
+console.log(`The length of my first name is: ${nameLength}`);
+
+
+
+
+console.log(`My name in all caps: ${fn.toUpperCase()} ${ln.toUpperCase()}`);
+
+console.log(`My name in all lower case: ${fn.toLowerCase()} ${ln.toLowerCase()}`);
+
+
+function sayGreeting(fn, ln, age, city) {
+  return `Hello! My name is ${fn} ${ln}. I’m ${age} years old, and I’m from ${city}. It’s nice to meet you!`;
+}
+
+
+console.log(sayGreeting("Daniel", "Garibay", 18, "Chicago"));
+
+
+function sayGreetingWithOptionalCity(fn, ln, age, city) {
+  return `Hello! My name is ${fn} ${ln}. I’m ${age} years old, and I’m from ${city}. It’s nice to meet you!`;
+}
+
+console.log(sayGreetingWithOptionalCity()); 
+
+
 </script>
 <body>
     
